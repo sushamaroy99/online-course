@@ -1,0 +1,126 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #ffffff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 150px; 
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 30px; 
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #f66962; 
+    font-weight: 500;
+    transition: color 0.3s ease; 
+}
+
+.navbar a:hover {
+    color: #e25750;
+}
+
+.header-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.header-icons a {
+    text-decoration: none;
+    color: #f66962; 
+    font-size: 24px; 
+    transition: color 0.3s ease; 
+}
+
+.header-icons a:hover {
+    color: #e25750; 
+}
+
+.register-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #ffe4e1, #ffffff); 
+}
+
+.register-box {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+.register-box h2 {
+    margin-bottom: 20px;
+    color: #f66962;
+    font-size: 2rem;
+}
+
+.register-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.register-form .form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.register-form .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.register-form .form-group input[type="submit"] {
+    background-color: #f66962;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-form .form-group input[type="submit"]:hover {
+    background-color: #e25750;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px; 
+    }
+
+    .header-icons {
+        gap: 10px; 
+    }
+
+    .register-box {
+        width: 90%;
+        padding: 20px; 
+    }
+}

@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #fff 0%, #ffe4e1 100%); 
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo img {
+    max-width: 150px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    padding: 10px 20px;
+    font-weight: 500;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #f66962;
+}
+
+.header-icons a {
+    margin-left: 15px;
+    font-size: 20px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.header-icons a:hover {
+    color: #f66962;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 120px 10%;
+    background: linear-gradient(to bottom, #fff 0%, #ffcccb 100%); 
+}
+
+.home-text h6 {
+    font-size: 1.2rem;
+    color: #f66962;
+    margin-bottom: 10px;
+}
+
+.home-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.home-text p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.latter form {
+    display: flex;
+    gap: 10px;
+}
+
+.latter input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.latter input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #f66962;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.latter input[type="submit"]:hover {
+    background-color: #e25750;
+}
+
+.home-img img {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 10px;
+}
+.container {
+    padding: 50px 10%;
+    background: linear-gradient(to right, #fff 0%, #ffe4e1 100%); 
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.container-box {
+    text-align: center;
+}
+
+.container-img img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.container-text h4 {
+    font-size: 2rem;
+    color: #f66962;
+}
+
+.container-text p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.categories {
+    padding: 50px 10%;
+    background: linear-gradient(to bottom, #ffe4e1 0%, #fff 100%); 
+}
+
+.center-text h5 {
+    color: #f66962;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.center-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.categories-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.box {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.box:hover {
+    transform: translateY(-10px);
+}
+
+.box img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.main-btn a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f66962;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.main-btn a.btn:hover {
+    background-color: #e25750;
+}
+.courses {
+    padding: 50px 10%;
+    background: linear-gradient(to bottom, #fff 0%, #ffe4e1 100%);
+}
+
+.center-text h5 {
+    color: #f66962;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.center-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-img img {
+        margin-top: 20px;
+        max-width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .categories-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+

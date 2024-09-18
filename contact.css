@@ -1,0 +1,118 @@
+body {
+    font-family: 'Montserrat', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #ffe4e1, #ffffff); 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%; 
+    background-color: #ffffff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.logo img {
+    height: 50px; 
+}
+
+.navbar {
+    list-style: none; 
+    display: flex; 
+    gap: 20px; 
+}
+
+.navbar li {
+    display: inline; 
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333; 
+    font-weight: 500; 
+    transition: color 0.3s ease;
+
+.navbar a:hover {
+    color: #f66962; 
+}
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.header-icons a {
+    color: #333; 
+    font-size: 1.5rem; 
+}
+
+.contact-section {
+    padding: 50px 10%; 
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: auto; 
+    text-align: center; 
+}
+
+.contact-container h2 {
+    color: #f66962; 
+    margin-bottom: 20px; 
+    font-size: 2.5rem; 
+}
+
+.contact-container p {
+    color: #333; 
+    line-height: 1.6; 
+    margin-bottom: 30px; 
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px; 
+    text-align: left; 
+}
+
+.contact-form .form-group label {
+    display: block; 
+    font-size: 1rem; 
+    margin-bottom: 5px; 
+    color: #333; 
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    font-size: 1rem;
+}
+
+.contact-form .form-group input[type="submit"] {
+    background-color: #f66962;
+    color: #fff; 
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.contact-form .form-group input[type="submit"]:hover {
+    background-color: #e25750; 
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 5%;
+    }
+
+    .contact-section {
+        padding: 30px 5%; 
+    }
+
+    .contact-container h2 {
+        font-size: 2rem; 
+    }
+}
